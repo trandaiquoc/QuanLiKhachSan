@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{72FD9635-E56D-47A0-966D-121EE1F2F527}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLKS</RootNamespace>
+    <AssemblyName>QLKS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BELLMAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BELLMAN.Designer.cs">
+      <DependentUpon>BELLMAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CTDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTDV.Designer.cs">
+      <DependentUpon>CTDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DANGKY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DANGKY.Designer.cs">
+      <DependentUpon>DANGKY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DANGNHAP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DANGNHAP.Designer.cs">
+      <DependentUpon>DANGNHAP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDV.Designer.cs">
+      <DependentUpon>DDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DOITAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DOITAC.Designer.cs">
+      <DependentUpon>DOITAC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DP.Designer.cs">
+      <DependentUpon>DP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DT_KTD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DT_KTD.Designer.cs">
+      <DependentUpon>DT_KTD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DT_QLDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DT_QLDV.Designer.cs">
+      <DependentUpon>DT_QLDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DT_TTTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DT_TTTK.Designer.cs">
+      <DependentUpon>DT_TTTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DVT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVT.Designer.cs">
+      <DependentUpon>DVT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DVTT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DVTT.Designer.cs">
+      <DependentUpon>DVTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KHACHHANG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KHACHHANG.Designer.cs">
+      <DependentUpon>KHACHHANG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KH_DDDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KH_DDDV.Designer.cs">
+      <DependentUpon>KH_DDDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KH_DDP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KH_DDP.Designer.cs">
+      <DependentUpon>KH_DDP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KH_DDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KH_DDV.Designer.cs">
+      <DependentUpon>KH_DDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KH_DP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KH_DP.Designer.cs">
+      <DependentUpon>KH_DP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KH_TT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KH_TT.Designer.cs">
+      <DependentUpon>KH_TT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KH_TTKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KH_TTKH.Designer.cs">
+      <DependentUpon>KH_TTKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LETAN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LETAN.Designer.cs">
+      <DependentUpon>LETAN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LT_DV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LT_DV.Designer.cs">
+      <DependentUpon>LT_DV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LT_P.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LT_P.Designer.cs">
+      <DependentUpon>LT_P.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LT_HD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LT_HD.Designer.cs">
+      <DependentUpon>LT_HD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LT_KHM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LT_KHM.Designer.cs">
+      <DependentUpon>LT_KHM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LT_PNP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LT_PNP.Designer.cs">
+      <DependentUpon>LT_PNP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVBM_QLP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVBM_QLP.Designer.cs">
+      <DependentUpon>NVBM_QLP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVBM_TNP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVBM_TNP.Designer.cs">
+      <DependentUpon>NVBM_TNP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NVDVS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NVDVS.Designer.cs">
+      <DependentUpon>NVDVS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BELLMAN.resx">
+      <DependentUpon>BELLMAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CTDV.resx">
+      <DependentUpon>CTDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DANGKY.resx">
+      <DependentUpon>DANGKY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DANGNHAP.resx">
+      <DependentUpon>DANGNHAP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DDV.resx">
+      <DependentUpon>DDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DOITAC.resx">
+      <DependentUpon>DOITAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DP.resx">
+      <DependentUpon>DP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DT_KTD.resx">
+      <DependentUpon>DT_KTD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DT_QLDV.resx">
+      <DependentUpon>DT_QLDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DT_TTTK.resx">
+      <DependentUpon>DT_TTTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DVT.resx">
+      <DependentUpon>DVT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DVTT.resx">
+      <DependentUpon>DVTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KHACHHANG.resx">
+      <DependentUpon>KHACHHANG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KH_DDDV.resx">
+      <DependentUpon>KH_DDDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KH_DDP.resx">
+      <DependentUpon>KH_DDP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KH_DDV.resx">
+      <DependentUpon>KH_DDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KH_DP.resx">
+      <DependentUpon>KH_DP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KH_TT.resx">
+      <DependentUpon>KH_TT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KH_TTKH.resx">
+      <DependentUpon>KH_TTKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LETAN.resx">
+      <DependentUpon>LETAN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LT_DV.resx">
+      <DependentUpon>LT_DV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LT_P.resx">
+      <DependentUpon>LT_P.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LT_HD.resx">
+      <DependentUpon>LT_HD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LT_KHM.resx">
+      <DependentUpon>LT_KHM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LT_PNP.resx">
+      <DependentUpon>LT_PNP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVBM_QLP.resx">
+      <DependentUpon>NVBM_QLP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVBM_TNP.resx">
+      <DependentUpon>NVBM_TNP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NVDVS.resx">
+      <DependentUpon>NVDVS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
